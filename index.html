@@ -83,7 +83,7 @@ td.mono { font-family:monospace; font-size:11px; color:#7a7c62; }
       <div class="brand-tag">Kkhavo</div>
       <div class="page-title">Live <span>Performance</span> Dashboard</div>
     </div>
-    <div class="updated">Last updated<br><strong>09 Jun 2026, 05:05 PM</strong><br>
+    <div class="updated">Last updated<br><strong>09 Jun 2026, 05:06 PM</strong><br>
     <span style="font-size:10px;color:#c0c0a0;margin-top:4px;display:block">May 21 – 2026-06-09</span></div>
   </div>
 
@@ -91,9 +91,9 @@ td.mono { font-family:monospace; font-size:11px; color:#7a7c62; }
   <div class="sec-head"><span class="sec-tag">Overview</span><div class="sec-line"></div></div>
   <div class="kpi-row kpi-row-4" style="margin-bottom:14px">
     <div class="kpi"><div class="kpi-label">Total Ad Spend</div><div class="kpi-val">₹17.2k</div><div class="kpi-sub">Sales + Cold + Traffic</div></div>
-    <div class="kpi"><div class="kpi-label">Purchases</div><div class="kpi-val">39</div><div class="kpi-sub">GA4 all channels</div></div>
-    <div class="kpi accent"><div class="kpi-label">CAC</div><div class="kpi-val">₹441</div><div class="kpi-sub">spend ÷ GA4 purchases</div></div>
-    <div class="kpi accent"><div class="kpi-label">ROAS</div><div class="kpi-val">1.73x</div><div class="kpi-sub">GA4 revenue ÷ spend</div></div>
+    <div class="kpi"><div class="kpi-label">Purchases</div><div class="kpi-val">26</div><div class="kpi-sub">Meta attributed</div></div>
+    <div class="kpi accent"><div class="kpi-label">CAC</div><div class="kpi-val">₹662</div><div class="kpi-sub">spend ÷ purchases</div></div>
+    <div class="kpi accent"><div class="kpi-label">ROAS</div><div class="kpi-val">1.11x</div><div class="kpi-sub">purchases × ₹737 AOV ÷ spend</div></div>
   </div>
   <div class="kpi-row" style="grid-template-columns:repeat(3,1fr);margin-bottom:28px">
     <div class="kpi"><div class="kpi-label">CVR</div><div class="kpi-val">1.8%</div><div class="kpi-sub">26 purchases ÷ 1,425 clicks</div></div>
@@ -379,7 +379,7 @@ new Chart(document.getElementById('dailyChart'), {
     labels: dailyDates,
     datasets: [
       { label: 'Purchases', data: metaPurchases, backgroundColor: '#5a7028', borderRadius: 4, yAxisID: 'y' },
-      { label: 'Spend (₹)',  data: [454.01, 815.37, 1279.6, 1056.56, 924.38, 954.44, 930.5, 955.66, 869.05, 1119.61, 1102.39, 592.31], type: 'line', borderColor: '#c8962a', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 3, yAxisID: 'y2' }
+      { label: 'Spend (₹)',  data: [454.01, 815.37, 1279.6, 1056.56, 924.38, 954.44, 930.5, 955.66, 869.05, 1119.61, 1102.39, 591.13], type: 'line', borderColor: '#c8962a', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 3, yAxisID: 'y2' }
     ]
   },
   options: {
@@ -394,7 +394,7 @@ new Chart(document.getElementById('dailyChart'), {
 
 const cityLabels    = ["Bengaluru", "Lucknow", "Mumbai", "Ahmedabad", "Delhi", "Hyderabad", "Patna", "New Delhi", "Chennai", "Gurugram"];
 const cityPurchases = [5, 4, 3, 3, 2, 2, 2, 2, 1, 1];
-const cityRevenue   = [4860.000071, 3150.0000529999998, 1079.999943, 1080.0000479999999, 2069.999957, 3419.999995, 2069.999947, 2069.999985, 359.999979, 1709.999974];
+const cityRevenue   = [4860.0000709999995, 3150.0000529999998, 1079.999943, 1080.0000479999999, 2069.999957, 3419.999995, 2069.999947, 2069.999985, 359.999979, 1709.999974];
 new Chart(document.getElementById('cityChart'), {
   type: 'bar',
   data: {
