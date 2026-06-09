@@ -83,20 +83,21 @@ td.mono { font-family:monospace; font-size:11px; color:#7a7c62; }
       <div class="brand-tag">Kkhavo</div>
       <div class="page-title">Live <span>Performance</span> Dashboard</div>
     </div>
-    <div class="updated">Last updated<br><strong>09 Jun 2026, 05:07 PM</strong><br>
+    <div class="updated">Last updated<br><strong>09 Jun 2026, 05:13 PM</strong><br>
     <span style="font-size:10px;color:#c0c0a0;margin-top:4px;display:block">May 21 – 2026-06-09</span></div>
   </div>
 
   <!-- TOP KPIs -->
   <div class="sec-head"><span class="sec-tag">Overview</span><div class="sec-line"></div></div>
-  <div class="kpi-row kpi-row-4" style="margin-bottom:14px">
+  <div class="kpi-row" style="grid-template-columns:repeat(5,1fr);margin-bottom:14px">
     <div class="kpi"><div class="kpi-label">Total Ad Spend</div><div class="kpi-val">₹17.2k</div><div class="kpi-sub">Sales + Cold + Traffic</div></div>
     <div class="kpi"><div class="kpi-label">Purchases</div><div class="kpi-val">26</div><div class="kpi-sub">Meta attributed</div></div>
+    <div class="kpi accent"><div class="kpi-label">Revenue</div><div class="kpi-val">₹20.6k</div><div class="kpi-sub">Paid Social · GA4</div></div>
     <div class="kpi accent"><div class="kpi-label">CAC</div><div class="kpi-val">₹662</div><div class="kpi-sub">spend ÷ purchases</div></div>
     <div class="kpi accent"><div class="kpi-label">ROAS</div><div class="kpi-val">1.11x</div><div class="kpi-sub">purchases × ₹737 AOV ÷ spend</div></div>
   </div>
   <div class="kpi-row" style="grid-template-columns:repeat(3,1fr);margin-bottom:28px">
-    <div class="kpi"><div class="kpi-label">CVR</div><div class="kpi-val">1.8%</div><div class="kpi-sub">26 purchases ÷ 1,425 clicks</div></div>
+    <div class="kpi"><div class="kpi-label">CVR</div><div class="kpi-val">1.8%</div><div class="kpi-sub">26 purchases ÷ 1,427 clicks</div></div>
     <div class="kpi"><div class="kpi-label">Avg Order Value</div><div class="kpi-val">₹737</div><div class="kpi-sub">Shopify · May–Jun 2026</div></div>
     <div class="kpi"><div class="kpi-label">Returning Customers</div><div class="kpi-val">7.84%</div><div class="kpi-sub">Shopify · May 19–Jun 9</div></div>
   </div>
@@ -112,9 +113,9 @@ td.mono { font-family:monospace; font-size:11px; color:#7a7c62; }
         <div style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#5a7028;margin-bottom:6px">Top Creative</div>
         <div style="font-family:Georgia,serif;font-size:17px;color:#2a2d1a;margin-bottom:14px">Kala Namak Rice</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <div style="text-align:center"><div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#9a9c7a;margin-bottom:4px">Spend</div><div style="font-family:Georgia,serif;font-size:20px">₹10,643</div></div>
+          <div style="text-align:center"><div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#9a9c7a;margin-bottom:4px">Spend</div><div style="font-family:Georgia,serif;font-size:20px">₹10,655</div></div>
           <div style="text-align:center"><div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#9a9c7a;margin-bottom:4px">Purchases</div><div style="font-family:Georgia,serif;font-size:20px;color:#5a7028">20</div></div>
-          <div style="text-align:center"><div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#9a9c7a;margin-bottom:4px">CPP</div><div style="font-family:Georgia,serif;font-size:20px">₹532</div></div>
+          <div style="text-align:center"><div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#9a9c7a;margin-bottom:4px">CPP</div><div style="font-family:Georgia,serif;font-size:20px">₹533</div></div>
           <div style="text-align:center"><div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#9a9c7a;margin-bottom:4px">CTR</div><div style="font-family:Georgia,serif;font-size:20px">3.13%</div></div>
         </div>
       </div>
@@ -174,12 +175,12 @@ td.mono { font-family:monospace; font-size:11px; color:#7a7c62; }
       <thead><tr><th>Creative</th><th>Spend</th><th>CTR</th><th>ATC</th><th>Checkout</th><th>Purchases</th><th>CPP</th><th>ROAS</th></tr></thead>
       <tbody><tr>
       <td>Kala Namak Rice <span class="badge">Winner</span></td>
-      <td class="num">₹10,643</td>
+      <td class="num">₹10,655</td>
       <td class="num">3.13%</td>
       <td class="num">59</td>
       <td class="num">58</td>
       <td class="num"><b>20</b></td>
-      <td class="num">₹532</td>
+      <td class="num">₹533</td>
       <td class="num">1.4x</td>
     </tr><tr>
       <td>Minal Educational <span class="badge">Winner</span></td>
@@ -245,7 +246,7 @@ new Chart(document.getElementById('dailyChart'), {
     labels: dailyDates,
     datasets: [
       { label: 'Purchases', data: metaPurchases, backgroundColor: '#5a7028', borderRadius: 4, yAxisID: 'y' },
-      { label: 'Spend (₹)',  data: [454.01, 815.37, 1279.6, 1056.56, 924.38, 954.44, 930.5, 955.66, 869.05, 1119.61, 1102.39, 592.31], type: 'line', borderColor: '#c8962a', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 3, yAxisID: 'y2' }
+      { label: 'Spend (₹)',  data: [454.01, 815.37, 1279.6, 1056.56, 924.38, 954.44, 930.5, 955.66, 869.05, 1119.61, 1102.39, 604.21], type: 'line', borderColor: '#c8962a', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 3, yAxisID: 'y2' }
     ]
   },
   options: {
@@ -260,7 +261,7 @@ new Chart(document.getElementById('dailyChart'), {
 
 const cityLabels    = ["Bengaluru", "Lucknow", "Mumbai", "Ahmedabad", "Delhi", "Hyderabad", "Patna", "New Delhi", "Chennai", "Gurugram"];
 const cityPurchases = [5, 4, 3, 3, 2, 2, 2, 2, 1, 1];
-const cityRevenue   = [4860.0000709999995, 3150.0000529999998, 1079.999943, 1080.0000479999999, 2069.999957, 3419.999995, 2069.999947, 2069.999985, 359.999979, 1709.999974];
+const cityRevenue   = [4860.0000709999995, 3150.000053, 1079.999943, 1080.0000479999999, 2069.999957, 3419.999995, 2069.999947, 2069.999985, 359.999979, 1709.999974];
 new Chart(document.getElementById('cityChart'), {
   type: 'bar',
   data: {
@@ -282,7 +283,7 @@ new Chart(document.getElementById('cityChart'), {
 });
 
 const channelLabels   = ["Paid Social", "Direct", "Organic Search", "Organic Social"];
-const channelRevenue  = [20609.999931000002, 5939.999978, 2430.000083, 719.999984];
+const channelRevenue  = [20609.999931000002, 5939.999978000001, 2430.000083, 719.999984];
 new Chart(document.getElementById('channelChart'), {
   type: 'doughnut',
   data: {
