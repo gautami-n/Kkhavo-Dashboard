@@ -460,7 +460,15 @@ function renderDetail(from, to) {{
   ];
   document.getElementById('detailFunnel').innerHTML = steps.map(([label, val, denom, color], i) => {{
     const width = s.lpv > 0 ? Math.max(20, Math.round(val / s.lpv * 100)) : 30;
-    const dropHtml = i > 0 ? `<div class="vfunnel-drop">▼ ${{pct(steps[i-1][1]-val, steps[i-1][1])}} dropped</div>` : '';
+    let dropHtml = '';
+    if (i > 0) {{
+      const prev = steps[i-1][1];
+      if (val > prev) {{
+        dropHtml = `<div class="vfunnel-drop" style="color:#b8860b">⚠ Tracking gap (pixel mismatch)</div>`;
+      }} else {{
+        dropHtml = `<div class="vfunnel-drop">▼ ${{pct(prev - val, prev)}} dropped</div>`;
+      }}
+    }}
     return `${{dropHtml}}<div class="vfunnel-step" style="width:${{width}}%;background:${{color}}">
       <div><div class="vfunnel-label">${{label}}</div><div class="vfunnel-num">${{val.toLocaleString()}}</div></div>
       <div class="vfunnel-pct">${{denom ? pct(val, denom) : ''}}</div>
