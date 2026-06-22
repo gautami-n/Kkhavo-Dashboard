@@ -464,7 +464,7 @@ function renderDetail(from, to) {{
     if (i > 0) {{
       const prev = steps[i-1][1];
       if (val > prev) {{
-        dropHtml = `<div class="vfunnel-drop" style="color:#b8860b">⚠ Tracking gap (pixel mismatch)</div>`;
+        dropHtml = '';
       }} else {{
         dropHtml = `<div class="vfunnel-drop">▼ ${{pct(prev - val, prev)}} dropped</div>`;
       }}
