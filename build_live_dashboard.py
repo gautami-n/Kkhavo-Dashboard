@@ -17,8 +17,9 @@ AD_ACCOUNT  = "act_26278626595106588"
 DATE_TODAY  = date.today().isoformat()
 
 CAMPAIGNS = [
-    {"id": "120249093451450577", "key": "cold", "name": "Cold Campaign",         "start": "2026-06-01"},
-    {"id": "120250204801330577", "key": "test", "name": "Test Campaign (CBO)",   "start": "2026-06-01"},
+    {"id": "120250638572270577", "key": "cold_v2", "name": "Cold Campaign v2",       "start": "2026-06-18"},
+    {"id": "120249093451450577", "key": "cold",    "name": "Cold Campaign v1",        "start": "2026-06-01"},
+    {"id": "120250204801330577", "key": "test",    "name": "Test Campaign (CBO)",     "start": "2026-06-01"},
 ]
 
 BOOST_CAMPAIGN_IDS = [
